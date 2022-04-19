@@ -1,18 +1,24 @@
 using System.Collections.Generic;
 using System;
 using System.IO;
+using Framework.Command;
 
 namespace Framework.Communication
 {
     public class SPI : ICommunication
     {
-        void Send(string stringToSend)
+        public void Send(ICommand command)
         {
 
         }
-        string Receive()
+        public string Receive()
         {
-            return "DraftSPI"
+            return "DraftSPI";
+        }
+
+        public void Dispose()
+        {
+
         }
     }
 }
