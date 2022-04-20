@@ -15,12 +15,12 @@ namespace Framework.Device
         }
         public void Send(ICommand command)
         {
-
+            protocol.Send(command);
         }
 
         public void Receive()
         {
-
+            protocol.Receive();
         }
 
         public void Transmit()
